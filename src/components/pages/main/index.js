@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import api from '../../../services/data/api';
+import Button from '../../Button';
+
 import './style.css';
 
 export default  class Main extends Component {
@@ -42,7 +44,7 @@ export default  class Main extends Component {
                     <li><span>Terrain: </span>{this.state.planet.terrain}</li>
                     <li><span>Featured in Filmes: </span>{this.state.planet.films.length}</li>
                 </ul>
-                <input className="next-btn" type="button" value="NEXT" onClick={this.planetRandom}/>
+                <button className="btn-model" onClick={this.planetRandom}>NEXT</button>
             </div>
         );
     }
