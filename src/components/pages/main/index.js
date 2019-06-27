@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import api from '../../services/data/api';
+import api from '../../../services/data/api';
+import './style.css';
 
 export default  class Main extends Component {
     constructor(props){
@@ -33,7 +34,7 @@ export default  class Main extends Component {
 
     render(){
         return(
-            <div planet-list>
+            <div className="planet-list">
                 <ul>
                     <li><span>Name: </span>{this.state.planet.name}</li>
                     <li><span>Population: </span>{this.state.planet.population}</li>
