@@ -8,134 +8,8 @@ img {
     width: 70%;
 }
 
-.btn {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.btn {
-    position: relative;
-    color: #ffefc7;
-}
-
-.btn {
-    margin: 50px;
-}
-
-.btn * {
-    font-size: 27px;
-    line-height: 58px;
-}
-
-.btn a {
-    padding: 0 100px;
-    cursor: pointer;
-    user-select: none;
-    transition-duration: 200ms;
-    transition-property: box-shadow;
-    transition-timing-function: cubic-bezier(0.7, 0, 0.7, 1);
-}
-
-.btn a .btn-txt {
-    text-shadow: 0 0 13px rgba(76, 33, 4, 0.79), 0 0 32px rgba(255, 187, 24, 0.6);
-    text-transform: uppercase;
-}
-
-.btn a .chevron-wrapper, .btn a .line-wrapper {
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-
-.btn a .chevron-wrapper .chevron {
-    position: absolute;
-    background: #e2d691;
-    width: 6px;
-    transition-duration: 200ms;
-    transition-timing-function: cubic-bezier(0.7, 0, 0.7, 1);
-}
-
-.btn a .chevron-wrapper .chevron.small {
-    height: 30%;
-    top: 0;
-}
-
-.btn a .chevron-wrapper .chevron.small.left {
-    left: 0;
-}
-
-.btn a .chevron-wrapper .chevron.small.right {
-    right: 0;
-}
-
-.btn a .chevron-wrapper .chevron.fat {
-    height: 70%;
-    bottom: 0;
-}
-
-.btn a .chevron-wrapper .chevron.fat.left {
-    left: 58px;
-}
-
-.btn a .chevron-wrapper .chevron.fat.right {
-    right: 58px;
-}
-
-.btn a .chevron-wrapper .chevron.left {
-    box-shadow: 9px 0 26px 2px #e2610b, 0 0 10px rgba(226, 97, 11, 0.5);
-    transform: skew(40deg);
-    transition-property: left, box-shadow;
-}
-
-.btn a .chevron-wrapper .chevron.right {
-    box-shadow: -9px 0 26px 2px #e2610b, 0 0 10px rgba(226, 97, 11, 0.5);
-    transform: skew(-40deg);
-    transition-property: right, box-shadow;
-}
-
-.btn:hover .chevron-wrapper .chevron.small.left {
-    left: 28px;
-}
-
-.btn:hover .chevron-wrapper .chevron.small.right {
-    right: 28px;
-}
-
-.btn:hover .chevron-wrapper .chevron.fat.left {
-    left: 52px;
-}
-
-.btn:hover .chevron-wrapper .chevron.fat.right {
-    right: 52px;
-}
-
-.btn:hover .chevron-wrapper .chevron.left {
-    box-shadow: 12px -5px 25px 3px rgba(226, 97, 11, 0.8), 0px 0px 13px rgba(226, 97, 11, 0.85);
-}
-
-.btn:hover .chevron-wrapper .chevron.right {
-    box-shadow: -12px -5px 25px 3px rgba(226, 97, 11, 0.8), 0px 0px 13px rgba(226, 97, 11, 0.85);
-}
-
-.btn:active .chevron-wrapper .chevron.small.left, .btn:focus .chevron-wrapper .chevron.small.left {
-    left: 48px;
-}
-
-.btn:active .chevron-wrapper .chevron.small.right, .btn:focus .chevron-wrapper .chevron.small.right {
-    right: 48px;
-}
-
-.btn:active .chevron-wrapper .chevron.fat.left, .btn:focus .chevron-wrapper .chevron.fat.left {
-    left: 72px;
-}
-
-.btn:active .chevron-wrapper .chevron.fat.right, .btn:focus .chevron-wrapper .chevron.fat.right {
-    right: 72px;
-}
-
-#btn-start {
+.container {
+    padding-left: 40px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -143,4 +17,6 @@ img {
 
 .btn-start {
     margin: 10px;
+    position: relative;
+    flex: 2 3 240px;
 }
