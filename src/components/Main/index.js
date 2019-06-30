@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import api from '../../services/data/api';
 
+import './style.css';
+
 export default  class Main extends Component {
     constructor(props){
         super(props)
@@ -48,7 +50,11 @@ export default  class Main extends Component {
                         </div>
                     </div>
                 </div>
-                <button className="btn-model" onClick={this.planetRandom}>NEXT</button>
+                <div id="btn-next">
+                    <div className="btn-next">
+                        <button className="btn-model" onClick={this.planetRandom}>NEXT</button>
+                    </div>
+                </div>
             </div>
         );
     }

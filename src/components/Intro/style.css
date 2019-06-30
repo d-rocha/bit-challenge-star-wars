@@ -1,25 +1,29 @@
 html {
     background: #010115;
     text-rendering: optimizeLegibility;
-    /* -webkit-text-size-adjust: 100%; */
     -moz-osx-font-smoothing: grayscale;
 }
-    
+
+img {
+    width: 70%;
+}
+
 .btn {
-    position: relative;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .btn {
     position: relative;
-    display: inline-block;
     color: #ffefc7;
 }
 
+.btn {
+    margin: 50px;
+}
+
 .btn * {
-    display: inline-block;
     font-size: 27px;
     line-height: 58px;
 }
@@ -39,7 +43,6 @@ html {
 }
 
 .btn a .chevron-wrapper, .btn a .line-wrapper {
-    position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
@@ -132,12 +135,12 @@ html {
     right: 72px;
 }
 
-#btn-start{
-    position: relative;
+#btn-start {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.btn-start{
-    justify-content: center;
-    align-content: center;
+.btn-start {
+    margin: 10px;
 }

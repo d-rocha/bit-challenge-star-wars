@@ -16,22 +16,22 @@ export default class Intro extends Component {
     }
 
     tocaSom(){
-        const som = document.getElementById("som");
-        som.play();
+        
     }
 
     loadIntro(){
         setTimeout( () =>{
-            this.tocaSom();
+            const sound = document.getElementById("sound");
+            sound.play();
         }, 3000) 
     }
 
     render(){
-        //const bannerStart = require('../../assets/images/sw-start-banner.png');
+        const bannerStart = require('../../assets/images/sw-banner.png');
         return(
             <div className="container">
-                <audio id="som" src="https://raw.githubusercontent.com/glaucia86/sounds/master/starwars.mp3"></audio>
-                {/* <img src={bannerStart} alt="banner start"/> */}
+                <audio id="sound" src="https://raw.githubusercontent.com/glaucia86/sounds/master/starwars.mp3"></audio>
+                <img src={bannerStart} alt="banner start"/>
                 <div className="btn">
                     <a href>
                         <span className="btn-txt">Play Now</span>
@@ -52,7 +52,6 @@ export default class Intro extends Component {
                         <Button />
                     </div>
                 </div>
-                
             </div>
         );
     }

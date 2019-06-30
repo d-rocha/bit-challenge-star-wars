@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
 
 body {
-    margin: 50px 0;
+    margin: 20px 0;
     font-family: "Press Start 2P";
     font-size: 14px;
     font-weight: 500;
@@ -79,7 +79,7 @@ p {
     transition: 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
     opacity: 0.5s 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
     pointer-events: none;
-    background-image: url(../../../assets/images/card-bg.jpg);
+    background-image: url(../../assets/images/sw-card-bg.jpg);
 }
 
 .card-info {
@@ -109,4 +109,14 @@ p {
     color: #099196;
     text-shadow: rgba(0, 0, 0, 0.5) 0 10px 10px;
     line-height: 1.5em;
+}
+
+#btn-next {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn-next {
+    margin: 10px;
 }
