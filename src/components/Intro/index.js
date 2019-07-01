@@ -29,9 +29,13 @@ export default class Intro extends Component {
                 <div className="img-banner">
                     <img src={bannerStart} alt="banner start"/>
                 </div>
+                <div className="msg-press-start">
+                    <span className="nes-text is-warning">Press Start</span>
+                </div>
                 <div className="btn-start">
                     <Button/>
                 </div>
+                
             </div>
         );
     }

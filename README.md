@@ -9,7 +9,7 @@ como seria o clima, o terreno e em quantos filmes da franquia ele apareceu.
 
 - HTML 5
 - CSS 3
-  - [Video Game Buttons](https://codepen.io/DanielWeiner/pen/iFadn)
+  - [Nostalgic NES]](https://nostalgic-css.github.io/NES.css)
   - [Parallax Star](https://codepen.io/saransh/pen/BKJun)
   - [Parallax Depth Cards](https://codepen.io/andymerskin/pen/XNMWvQ)
 - Javascript (ES6)

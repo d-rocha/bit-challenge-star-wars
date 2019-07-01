@@ -1,27 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+@import url('https://unpkg.com/nes.css/css/nes.css');
 
-.btn-model {
-    text-align: center;
-    display: inline-block;
-    margin: 5px;
-    font-weight: bold;
-    padding: 10px 0 10px 10px;
-    background-color: lightgray;
-    text-shadow: -1px -1px black, 1px 1px white;
-    color: gray;
-}
-
-.btn-model{
-    border-radius: 7px;
-    box-shadow: 0 .2em gray;
-    cursor: pointer;
-    font-family: 'Press Start 2P';
-    text-decoration: none;
+.btn-start {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 2em;
 }
-
-.btn-model:active {
-    box-shadow: none;
-    position: relative;
-    top: .2em;
-} 

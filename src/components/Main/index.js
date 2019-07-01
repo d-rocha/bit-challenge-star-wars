@@ -50,7 +50,7 @@ export default  class Main extends Component {
                     <div className="card-wrap">
                         <div className="card card-bg">
                             <div className="card-info">
-                                <h1><span>Planet</span><br/>{this.state.planet.name}</h1>
+                                <h1><span className="nes-radio">Planet</span><br/>{this.state.planet.name}</h1>
                                 <p><span>Population: </span>{this.state.planet.population}</p>
                                 <p><span>Climate: </span>{this.state.planet.climate}</p>
                                 <p><span>Terrain: </span>{this.state.planet.terrain}</p>
@@ -61,7 +61,8 @@ export default  class Main extends Component {
                 </div>
                 <div id="btn-next">
                     <div className="btn-next">
-                        <button className="btn-model" onClick={this.planetRandom}>NEXT</button>
+                        {/* <button className="btn-model" onClick={this.planetRandom}>NEXT</button> */}
+                        <button type="button" class="nes-btn is-success" onClick={this.planetRandom}>NEXT</button>
                     </div>
                 </div>
             </div>
