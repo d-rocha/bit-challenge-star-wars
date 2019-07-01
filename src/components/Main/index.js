@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import api from '../../services/data/api';
+import Load from '../Load';
 
 import './style.css';
 
@@ -13,7 +14,8 @@ export default  class Main extends Component {
                 climate: '',
                 terrain: '',
                 films: []
-            }
+            },
+            load: false
         }
     }
 
@@ -27,13 +29,20 @@ export default  class Main extends Component {
     }
 
     planetRandom = () => {
+        this.setState({ load: true })
         let id = Math.floor(Math.random() * 61 + 1);
         this.getPlanet(id).then(planet => {
-            this.setState({ planet: planet.data })
+            this.setState({ 
+                planet: planet.data,
+                load: false
+            })
         })
     };
 
     render(){
+        if(this.state.load){
+           return <Load/>
+        }
         return(
             <div>
                 <h1 className="title">The Planets</h1>

@@ -1,22 +1,38 @@
-html {
+html, body {
     background: #010115;
     text-rendering: optimizeLegibility;
     -moz-osx-font-smoothing: grayscale;
+    height: 100%;
+    min-height: 100%;
+}
+
+.container-intro {
+    height: 100%;
+    min-height: 100%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;   
 }
 
 img {
-    width: 70%;
+    max-width: 100%;
 }
 
-.container {
-    padding-left: 40px;
+.img-banner {
+    height: 100%;
+    min-height: 100%;
+    display: -webkit-flex;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;      
 }
 
 .btn-start {
-    margin: 10px;
-    position: relative;
-    flex: 2 3 240px;
+    padding: -40px;
+    left: 40%;   
 }

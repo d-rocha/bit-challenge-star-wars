@@ -23,13 +23,14 @@ export default class Intro extends Component {
     render(){
         const bannerStart = require('../../assets/images/sw-banner.png');
         return(
-            <div className="container">
+            <div className="container-intro">
                 <audio id="sound" src="https://raw.githubusercontent.com/glaucia86/sounds/master/starwars.mp3"></audio>
-                <img src={bannerStart} alt="banner start"/>
-                <div id="btn-start">
-                    <div className="btn-start">
-                        <Button title="START"/>
-                    </div>
+                
+                <div className="img-banner">
+                    <img src={bannerStart} alt="banner start"/>
+                </div>
+                <div className="btn-start">
+                    <Button/>
                 </div>
             </div>
         );
