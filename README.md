@@ -9,9 +9,10 @@ como seria o clima, o terreno e em quantos filmes da franquia ele apareceu.
 
 - HTML 5
 - CSS 3
-  - [Nostalgic NES]](https://nostalgic-css.github.io/NES.css)
-  - [Parallax Star](https://codepen.io/saransh/pen/BKJun)
+  - [Nostalgic NES](https://nostalgic-css.github.io/NES.css)
+  - [Space](https://codepen.io/CarliBotes/pen/OGLZQM)
   - [Parallax Depth Cards](https://codepen.io/andymerskin/pen/XNMWvQ)
+  - [Star Trek: The Next Generation](https://codepen.io/AllOfTheD/pen/fvBqm)
 - Javascript (ES6)
 - [ReactJS](https://reactjs.org/)
 - [React-router-dom](https://www.npmjs.com/package/react-router-dom)

@@ -61,7 +61,6 @@ export default  class Main extends Component {
                 </div>
                 <div id="btn-next">
                     <div className="btn-next">
-                        {/* <button className="btn-model" onClick={this.planetRandom}>NEXT</button> */}
                         <button type="button" class="nes-btn is-success" onClick={this.planetRandom}>NEXT</button>
                     </div>
                 </div>

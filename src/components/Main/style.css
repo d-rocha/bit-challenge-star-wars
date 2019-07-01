@@ -17,6 +17,7 @@ body {
     color: #f8a00f;
     text-align: center;
     padding-bottom: 15px;
+    margin-top: 20px;
 }
 
 p {
@@ -60,7 +61,7 @@ p {
 }
 
 .card {
-    position: relative;
+    /* position: relative; */
     flex: 0 0 240px;
     min-width: 340px;
     min-height: 420px;
@@ -137,4 +138,5 @@ p {
     .card {
         min-width: 260px;
     }
+    
 }

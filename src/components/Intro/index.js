@@ -6,7 +6,7 @@ import './style.css';
 export default class Intro extends Component {
 
     componentDidMount(){
-        // this.loadIntro();
+        this.loadIntro();
     }
 
     tocaSom(){
@@ -17,7 +17,7 @@ export default class Intro extends Component {
         setTimeout( () =>{
             const sound = document.getElementById("sound");
             sound.play();
-        }, 3000) 
+        }, 1000) 
     }
 
     render(){
