@@ -61,7 +61,6 @@ p {
 }
 
 .card {
-    /* position: relative; */
     flex: 0 0 240px;
     min-width: 340px;
     min-height: 420px;
@@ -88,6 +87,7 @@ p {
 
 .card-info {
     padding: 10px;
+    padding-top: 50%;
     position: absolute;
     bottom: 0;
     color: #fff;
@@ -103,7 +103,7 @@ p {
 
 .card-info span {
     color: #e7aa44;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .card-info h1 {
@@ -122,21 +122,77 @@ p {
     font-size: 1.5em;
 }
 
+.arrow-indicator {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+
+.arrow-indicator img {
+    position: absolute;
+    left: 280px;
+}
+
+.loading img{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    margin-left: 33.33%;
+}
+
 .loading .loading-msg {
     height: 100%;
     width: 100%;
     color: #fff;
-}
-
-.loading  {
+    font-size: 1.25em;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-@media (max-width: 400px){
+@media (max-width: 425px){
     .card {
         min-width: 260px;
     }
+
+    .loading img{
+        width: 80%;
+        margin-left: 7%;
+        margin-top: 30%;
+    }
+
+    .loading .loading-msg {
+        font-size: 1em;
+    }
+
+    .arrow-indicator img {
+        position: absolute;
+        left: 200px;
+    }
+}
+
+@media (min-width: 1800px){
+    .title {
+        margin-top: 40px;
+    }
+
+    .card {
+        min-width: 500px;
+        min-height: 700px;
+    }
+
+    .card-info {
+        padding-top: 5%;
+    }
+
+    .arrow-indicator img {
+        position: absolute;
+        left: 430px;
+    }
     
+
+    .loading .loading-msg {
+        font-size: 2.25em;
+    }
 }

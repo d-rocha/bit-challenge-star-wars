@@ -6,6 +6,26 @@ html, body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+.container-first {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+    color: #00BFFF;
+    font-weight: 700;
+    letter-spacing: .1em;
+    font-size: 34.6667px;
+    transition: all 3s ease-out;
+}
+
+.container-second {
+    transition: all 6s ease-in;
+}
+
+.container-second .msg-press-start .btn-start {
+    transition: all 6s ease-in;
+}
+
 .img-banner {
     margin-top: 30px;
     margin-left: 30px;
@@ -18,8 +38,6 @@ html, body {
 .img-banner img {
     max-width: 80%;
 }
-
-
 
 .msg-press-start {
     display: flex;
@@ -45,4 +63,10 @@ html, body {
     .btn-start{
         font-size: 1.25em;
     }
+}
+
+@media (min-width: 1800px){
+    .img-banner {
+        margin-top: 170px;
+    }   
 }

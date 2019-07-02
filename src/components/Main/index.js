@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import api from '../../services/data/api';
+import Button from '../Button';
 import Load from '../Load';
 
 import './style.css';
@@ -15,6 +16,7 @@ export default  class Main extends Component {
                 terrain: '',
                 films: []
             },
+            arrow: '',
             load: false
         }
     }
@@ -29,11 +31,13 @@ export default  class Main extends Component {
     }
 
     planetRandom = () => {
+        const arrowIndicator = require('../../assets/images/sw-arrow-indicator.gif');
         this.setState({ load: true })
         let id = Math.floor(Math.random() * 61 + 1);
         this.getPlanet(id).then(planet => {
             this.setState({ 
                 planet: planet.data,
+                arrow:  <img src={arrowIndicator} alt="arrow indicator"/>,
                 load: false
             })
         })
@@ -50,7 +54,8 @@ export default  class Main extends Component {
                     <div className="card-wrap">
                         <div className="card card-bg">
                             <div className="card-info">
-                                <h1><span className="nes-radio">Planet</span><br/>{this.state.planet.name}</h1>
+                                <h1><span>Planet</span><br/>{this.state.planet.name}</h1>
+                                <span className="arrow-indicator">{this.state.arrow}</span>
                                 <p><span>Population: </span>{this.state.planet.population}</p>
                                 <p><span>Climate: </span>{this.state.planet.climate}</p>
                                 <p><span>Terrain: </span>{this.state.planet.terrain}</p>
@@ -61,7 +66,7 @@ export default  class Main extends Component {
                 </div>
                 <div id="btn-next">
                     <div className="btn-next">
-                        <button type="button" class="nes-btn is-success" onClick={this.planetRandom}>NEXT</button>
+                        <button type="button" class="nes-btn is-warning" onClick={this.planetRandom}>NEXT</button>
                     </div>
                 </div>
             </div>
