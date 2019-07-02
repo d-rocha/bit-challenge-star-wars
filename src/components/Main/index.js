@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import api from '../../services/data/api';
-import Button from '../Button';
+// import Button from '../Button';
 import Load from '../Load';
 
 import './style.css';
@@ -17,7 +17,7 @@ export default  class Main extends Component {
                 films: []
             },
             arrow: '',
-            load: false
+            load: false,
         }
     }
 
@@ -66,7 +66,7 @@ export default  class Main extends Component {
                 </div>
                 <div id="btn-next">
                     <div className="btn-next">
-                        <button type="button" class="nes-btn is-warning" onClick={this.planetRandom}>NEXT</button>
+                        <button type="button" className="nes-btn is-warning" onClick={this.planetRandom}>NEXT</button>
                     </div>
                 </div>
             </div>

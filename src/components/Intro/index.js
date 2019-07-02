@@ -16,7 +16,6 @@ export default class Intro extends Component {
         }
     }
 
-
     componentDidMount(){
         this.introSound();
         this.loadIntro();
@@ -44,10 +43,9 @@ export default class Intro extends Component {
     }
 
     render(){
-        //const bannerStart = require('../../assets/images/sw-banner.png');
         return(
             <div className="container-intro">
-                <div className="container-first">
+                <div className="intro container-first">
                     <span>A Long Time Ago, in a galaxy far,<br/> far away ...</span>
                 </div>
 

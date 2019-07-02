@@ -6,16 +6,21 @@ html, body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.container-first {
-    display: none;
+.intro {
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.intro {
     margin-top: 20%;
     color: #00BFFF;
     font-weight: 700;
     letter-spacing: .1em;
     font-size: 34.6667px;
-    transition: all 3s ease-out;
 }
 
 .container-second {
