@@ -3,6 +3,7 @@ import Button from '../Button';
 
 import './style.css';
 
+
 export default class Intro extends Component {
     constructor(props){
         super(props)
@@ -19,6 +20,17 @@ export default class Intro extends Component {
     componentDidMount(){
         this.introSound();
         this.loadIntro();
+        this.removeIntroText();
+    }
+
+    removeIntroText(){
+        setTimeout( () => {
+            var display = document.getElementById("intro").style.display;
+            if(display === "none")
+                document.getElementById("intro").style.display = 'block';
+            else
+                document.getElementById("intro").style.display = 'none';
+        }, 3000)
     }
 
     introSound(){
@@ -26,7 +38,7 @@ export default class Intro extends Component {
         setTimeout( () => {
             this.setState( { audio: 'https://raw.githubusercontent.com/glaucia86/sounds/master/starwars.mp3'});
             sound.play();
-        }, 1000)
+        }, 2000)
     }
 
     loadIntro(){
@@ -39,23 +51,24 @@ export default class Intro extends Component {
                     btn: <Button/>
                 }
              })
-        }, 1000) 
+        }, 4000) 
     }
 
     render(){
+
         return(
             <div className="container-intro">
-                <div className="intro container-first">
+                <div id="intro" className="intro-text">
                     <span>A Long Time Ago, in a galaxy far,<br/> far away ...</span>
                 </div>
 
-                <div className="container-second">
+                <div className="sound">
                     <audio id="sound" src={this.state.audio}></audio>
                     
                     <div className="img-banner">
                         {this.state.intro.img}
                     </div>
-                    
+
                     <div className="msg-press-start">
                         <span className="nes-text is-warning">{this.state.intro.msg}</span>
                     </div>
