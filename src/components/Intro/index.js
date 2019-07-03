@@ -39,7 +39,7 @@ export default class Intro extends Component {
                     btn: <Button/>
                 }
              })
-        }, 3000) 
+        }, 1000) 
     }
 
     render(){
