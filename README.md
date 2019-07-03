@@ -10,25 +10,24 @@ como seria o clima, o terreno e em quantos filmes da franquia ele apareceu.
 - HTML 5
 - CSS 3
   - [Nostalgic NES](https://nostalgic-css.github.io/NES.css)
-  - [Space](https://codepen.io/CarliBotes/pen/OGLZQM)
   - [Parallax Depth Cards](https://codepen.io/andymerskin/pen/XNMWvQ)
   - [Star Trek: The Next Generation](https://codepen.io/AllOfTheD/pen/fvBqm)
 - Javascript (ES6)
 - [ReactJS](https://reactjs.org/)
 - [React-router-dom](https://www.npmjs.com/package/react-router-dom)
 - [Axios](https://github.com/axios/axios)
-- [SWAPI API](https://swapi.co/)<p align='center'><img src='https://swapi.co/static/favicon.ico' alt='Swapi'/></p>
+- [SWAPI API](https://swapi.co/)
 
 # Para acessar o projeto:
 
-[CLIQUE AQUI](https://sw-challenge-b2w.netlify.com/)
+[CLIQUE AQUI](https://sw-bit-challenge.netlify.com/)
 
 ou
 
 Copie o link abaixo e cole no navegador.
 
 ```
-https://sw-challenge-b2w.netlify.com/
+https://sw-bit-challenge.netlify.com/
 
 ```
 
