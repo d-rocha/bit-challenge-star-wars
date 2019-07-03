@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import api from '../../services/data/api';
 // import Button from '../Button';
 import Load from '../Load';
+import Erro from '../Erro';
 
 import './style.css';
 
@@ -18,6 +19,7 @@ export default  class Main extends Component {
             },
             arrow: '',
             load: false,
+            error: false
         }
     }
 
@@ -38,14 +40,20 @@ export default  class Main extends Component {
             this.setState({ 
                 planet: planet.data,
                 arrow:  <img src={arrowIndicator} alt="arrow indicator"/>,
-                load: false
+                load: false,
+                error: false
             })
-        })
+        }).catch( error => {
+            this.setState({ load: false, error: true });
+        });
     };
 
     render(){
-        if(this.state.load){
+        if( this.state.load ){
            return <Load/>
+        }
+        if( this.state.error ){
+            return <Erro/>
         }
         return(
             <div>
