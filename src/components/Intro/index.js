@@ -3,12 +3,10 @@ import Button from '../Button';
 
 import './style.css';
 
-
 export default class Intro extends Component {
     constructor(props){
         super(props)
         this.state = {
-            audio: '',
             intro: {
                 img: '',
                 msg: '',
@@ -18,7 +16,6 @@ export default class Intro extends Component {
     }
 
     componentDidMount(){
-        this.introSound();
         this.loadIntro();
         this.removeIntroText();
     }
@@ -31,14 +28,6 @@ export default class Intro extends Component {
             else
                 document.getElementById("intro").style.display = 'none';
         }, 3000)
-    }
-
-    introSound(){
-        const sound = document.getElementById("sound");
-        setTimeout( () => {
-            this.setState( { audio: 'https://raw.githubusercontent.com/glaucia86/sounds/master/starwars.mp3'});
-            sound.play();
-        }, 2000)
     }
 
     loadIntro(){
@@ -62,9 +51,7 @@ export default class Intro extends Component {
                     <span>A Long Time Ago, in a galaxy far,<br/> far away ...</span>
                 </div>
 
-                <div className="sound">
-                    <audio id="sound" src={this.state.audio}></audio>
-                    
+                <div>
                     <div className="img-banner">
                         {this.state.intro.img}
                     </div>

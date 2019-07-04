@@ -5,9 +5,6 @@ O desafio consiste em construir uma aplicação para auxiliar o apresentador de 
 que dado um planeta aleatório da franquia star wars, apresente seus dados e pergunte aos participantes
 como seria o clima, o terreno e em quantos filmes da franquia ele apareceu. 
 
-## NOTA!!!
-Esse app contém a música de tema do filme, então certifique-se de o volume do seu som não estar muito alto. 
-
 ## Tecnologias Utilizadas
 
 - HTML 5
@@ -20,7 +17,6 @@ Esse app contém a música de tema do filme, então certifique-se de o volume do
 - [React-router-dom](https://www.npmjs.com/package/react-router-dom)
 - [Axios](https://github.com/axios/axios)
 - [SWAPI API](https://swapi.co/)
-- [Música tema + Intro](https://github.com/glaucia86/app-star-wars-intro-js-css)
 
 # Para acessar o projeto:
 
