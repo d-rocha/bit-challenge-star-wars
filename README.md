@@ -24,14 +24,14 @@ Esse app contém a música de tema do filme, então certifique-se de o volume do
 
 # Para acessar o projeto:
 
-[CLIQUE AQUI](https://sw-bit-challenge.netlify.com/)
+[CLIQUE AQUI](https://sw-bit-challenge.herokuapp.com/)
 
 ou
 
 Copie o link abaixo e cole no navegador.
 
 ```
-https://sw-bit-challenge.netlify.com/
+https://sw-bit-challenge.herokuapp.com/
 
 ```
 
