@@ -22,8 +22,8 @@ export default class Intro extends Component {
 
     removeIntroText(){
         setTimeout( () => {
-            var display = document.getElementById("intro").style.display;
-            if(display === "none")
+            let div = document.getElementById("intro").style.display;
+            if(div === "none")
                 document.getElementById("intro").style.display = 'block';
             else
                 document.getElementById("intro").style.display = 'none';
