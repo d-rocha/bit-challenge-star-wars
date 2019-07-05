@@ -1,13 +1,10 @@
 @import './keyframes';
 @import './variables';
+@import './placeholder';
+@import './mixins';
 
 .stars, .twinkling {
-  position:absolute;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
-  display:block;
+  @extend %stars-twinklig-config;
 }
 
 .stars {
@@ -16,12 +13,8 @@
 }
 
 .twinkling{
+  @include twinklig-animation;
+  
   background:transparent url(https://dylanshearer.com.au/codepen/nextgen/twinkling.png) repeat top center;
   z-index:-10;
-
-  -moz-animation:move-twink-back 200s linear infinite;
-  -ms-animation:move-twink-back 200s linear infinite;
-  -o-animation:move-twink-back 200s linear infinite;
-  -webkit-animation:move-twink-back 200s linear infinite;
-  animation:move-twink-back 200s linear infinite;
 } 

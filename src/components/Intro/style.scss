@@ -1,5 +1,6 @@
 @import '../../styles/placeholder.scss';
 @import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
 
 .intro-text {
     @extend %margin-tlr;
@@ -21,15 +22,15 @@
 
 .msg-press-start {
     @extend %flexbox-base;
-    @extend %blink-animation;
+    @include blink-animation;
     margin-top: 20px;
 }
 
 .nes-text {
-    color: $blink-color !important;
+    color: $white !important;
 }
 
-@media (max-width:600px){
+@media (max-width: $md){
     .img-banner {
         margin-top: 150px;
         img {
@@ -42,7 +43,7 @@
     }
 }
 
-@media (min-width: 1800px){
+@media (min-width: $xl){
     .img-banner {
         margin-top: 170px;
     }   

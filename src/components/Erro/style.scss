@@ -1,5 +1,6 @@
 @import '../../styles/variables';
 @import '../../styles/placeholder';
+@import '../../styles/mixins.scss';
 
 .retry-btn {
     @extend %button-config;
@@ -7,9 +8,9 @@
 
 .retry {
     @extend %flexbox-base;
-    @extend %blink-animation;
+    @include blink-animation;
     margin-top: 20px;
-    color: $blink-color;
+    color: $white;
     font-size: 1.25em;
 }
 
@@ -27,7 +28,7 @@
         @extend %flexbox-base;
         @extend %wh-default;
         margin-top: 20px;
-        color: $blink-color;
+        color: $white;
         font-size: 1.25em;
     }
 }
