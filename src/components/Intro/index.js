@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Button from '../Button';
 
-import './style.css';
+import './style.scss';
 
 export default class Intro extends Component {
     constructor(props){

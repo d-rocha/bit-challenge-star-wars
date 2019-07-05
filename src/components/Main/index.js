@@ -4,7 +4,7 @@ import api from '../../services/data/api';
 import Load from '../Load';
 import Erro from '../Erro';
 
-import './style.css';
+import './style.scss';
 
 export default  class Main extends Component {
     constructor(props){

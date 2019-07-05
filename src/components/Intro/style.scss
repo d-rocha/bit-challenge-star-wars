@@ -1,0 +1,49 @@
+@import '../../styles/placeholder.scss';
+@import '../../styles/variables.scss';
+
+.intro-text {
+    @extend %margin-tlr;
+    @extend %flexbox-base;
+    margin-top: 20%;
+    color: $intro-color;
+    font-weight: 700;
+    letter-spacing: .1em;
+    font-size: 34.6667px;
+}
+
+.img-banner {
+    @extend %margin-tlr;
+    @extend %flexbox-base;
+    img {
+        max-width: 80%;
+    }
+}
+
+.msg-press-start {
+    @extend %flexbox-base;
+    @extend %blink-animation;
+    margin-top: 20px;
+}
+
+.nes-text {
+    color: $blink-color !important;
+}
+
+@media (max-width:600px){
+    .img-banner {
+        margin-top: 150px;
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .btn-start{
+        font-size: 1.25em;
+    }
+}
+
+@media (min-width: 1800px){
+    .img-banner {
+        margin-top: 170px;
+    }   
+}

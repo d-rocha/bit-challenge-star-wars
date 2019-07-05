@@ -1,0 +1,5 @@
+@import '../../styles/_placeholder.scss';
+
+.btn-start {
+    @extend %button-config;
+}
